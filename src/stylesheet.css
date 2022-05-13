@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 :root
@@ -21,30 +22,132 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.rowFlex
-{
+.rowFlex{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .card
 {
-    width: 30vw;
-    height: 90vh;
+    width: 550px;
+    height: 868px;
     background: var(--lightBlue);
 }
 
 .underCard
 {
     width: 80%;
-    height: 80%;
-    background: white;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main
+{
+    background: var(--midBlue);
+}
+
+.main h3
+{
+    color: var(--textGray);
+}
+
+.main *
+{
+    color: white;
+}
+
+#info
+{
+    padding: 30px;
+}
+
+#info > div{
+    margin: 10px 0;
+}
+
+.footer
+{
+    background: var(--darkBlue);
+    height: 100px;
+    width: 100%;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.footer i{
+    color: var(--iconGray);
+    font-size: 3rem;
+    margin: 0 10px;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: .5s;
+}
+
+.footer i:hover{
+    cursor: pointer;
+    color: var(--orange);
 }
 
 img
 {
     width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.orange
+{
+    color: var(--orange);
+}
+
+#info h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#info h4{
+    font-weight: 100;
+}
+
+.whiteBtn{
+    background: white;
+    color: var(--darkBlue);
+    padding: 9px 13px;
+    border-radius: 8px;
+    margin: 25px 0 0 0;
+    font-size: 1rem;
+}
+
+.blueBtn{
+    background: var(--babyBlue);
+    color: white;
+    padding: 9px 13px;
+    border-radius: 8px;
+    margin: 25px 0 0 0;
+    font-size: 1rem;
+}
+
+.blueBtn i{
+    margin: 0 5px;
+}
+
+.whiteBtn i{
+    color: var(--darkBlue);
+    margin: 0 5px;
+}
+
+.whiteBtn, .blueBtn{
+    margin: 20px 8px 0 8px ;
+}
+
+#info h4{
+    color: white;
 }

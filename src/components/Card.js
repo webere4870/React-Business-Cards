@@ -5,8 +5,10 @@ import Footer from './Footer'
 function Card()
 {
     return (
-        <div className="underCard colFlex">
+        <div className="underCard">
             <Picture/>
+            <Main/>
+            <Footer/>
         </div>
         
     )
