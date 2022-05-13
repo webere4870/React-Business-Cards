@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --lightBlue: #23252C;
+    --midBlue: #1A1B21;
+    --darkBlue:#161619;
+    --babyBlue: #5093E2;
+    --textGray: #DCDCDC;
+    --iconGray: #918E9B;
+    --orange: #F47D27;
+}
+
+.colFlex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowFlex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card
+{
+    width: 30vw;
+    height: 90vh;
+    background: var(--lightBlue);
+}
+
+.underCard
+{
+    width: 80%;
+    height: 80%;
+    background: white;
+}
+
+img
+{
+    width: 100%;
+}
